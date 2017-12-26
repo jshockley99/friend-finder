@@ -1,13 +1,20 @@
-// Search for friend data - provides JSON
-app.get("/api/friends", function(req, res) {
-    return res.json(friends);
-});
+// import friends data
+var friends = require("../data/friends.js") 
 
-// This will be used to handle incoming survey results 
-// This route will also be used to handle the compatibility logic
-app.post("/api/new", function(req, res) {
+//export routes to main server.js
+module.exports = function(app) {
 
-    var newfriend = req.body
-        friends.push(newfriend);
-    }
-});
+    // Search for friend data - provides JSON
+    app.get("/api/friends", function(req, res) {
+        return res.json(friends);
+    });
+
+    // This will be used to handle incoming survey results 
+    // This route will also be used to handle the compatibility logic
+    app.post("/api/new", function(req, res) {
+    		var newfriend = req.body
+            friends.push(newfriend);
+        }
+    });
+
+};
