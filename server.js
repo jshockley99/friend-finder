@@ -10,8 +10,12 @@ var app = express();
 //create new port or dynamic PORT for Heroku
 var PORT = process.env.PORT || 3000;
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // Starts the server to begin listening
 // =============================================================

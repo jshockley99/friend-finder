@@ -12,6 +12,26 @@
 </head>
 
 <body>
+    <!-- /.modal -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <!-- /.modal-dialog -->
+        <div class="modal-dialog" role="document">
+            <!-- /.modal-content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title">Friend Match</h2>
+                </div>
+                <div class="modal-body">
+                    <p><img id="match-photo" src="#"></p>
+                    <h3 id="match-name"></h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <h2>Survey Questions</h2>
         <hr />
@@ -24,102 +44,102 @@
                 <label for="inputPhoto">Link to Photo Image (Required)</label>
                 <input class="form-control" id="inputPhoto" placeholder="http://example.com/sample-photo.jpg" required>
             </div>
-            <hr />            
+            <hr />
             <div class="form-group">
-            	<h3>Question 1</h3>
+                <h3>Question 1</h3>
                 <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
                 <select class="form-control" id="question1">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 2</h3>
+                <h3>Question 2</h3>
                 <label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
                 <select class="form-control" id="question2">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 3</h3>
+                <h3>Question 3</h3>
                 <label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
                 <select class="form-control" id="question3">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 4</h3>
+                <h3>Question 4</h3>
                 <label for="question4">You rarely do something just out of sheer curiosity.</label>
                 <select class="form-control" id="question4">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 5</h3>
+                <h3>Question 5</h3>
                 <label for="question5">People rarely upset you.</label>
                 <select class="form-control" id="question5">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 6</h3>
+                <h3>Question 6</h3>
                 <label for="question6">It is often difficult for you to relate to other people's feelings.</label>
                 <select class="form-control" id="question6">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 7</h3>
+                <h3>Question 7</h3>
                 <label for="question7">In a discussion, truth should be more important than people's sensitivities.</label>
                 <select class="form-control" id="question7">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 8</h3>
+                <h3>Question 8</h3>
                 <label for="question8">You rarely get carried away by fantasies and ideas.</label>
                 <select class="form-control" id="question8">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 9</h3>
+                <h3>Question 9</h3>
                 <label for="question9">You think that everyone's view should be respected regardless of whether they are supported by facts or not.</label>
                 <select class="form-control" id="question9">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5(strongly agree)</option>
                 </select>
-            	<h3>Question 10</h3>
+                <h3>Question 10</h3>
                 <label for="question10">You feel more energetic after spending time with a group of people.</label>
                 <select class="form-control" id="question10">
-                	<option value="" style="display: none">Select an option</option>
+                    <option value="" style="display: none">Select an option</option>
                     <option value="1">1(strongly disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -128,7 +148,7 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-primary btn-lg" id="add-btn"><span class="glyphicon glyphicon-ok-circle"></span> Submit</button>
-            <hr />            
+            <hr />
         </form>
         <footer class="footer">
             <div class="container">
@@ -139,26 +159,37 @@
         </footer>
     </div>
 
-  <script type="text/javascript">
+    <script type="text/javascript">
     // on submit, adds questionaire results to friends data array
     $("#add-btn").on("click", function(event) {
-      event.preventDefault();
+        event.preventDefault();
 
-      var newFriend = {
-        name: $("#inputName").val().trim(),
-        photo: $("#inputPhoto").val().trim(),
-        scores: [$("#question1").val().trim(),$("#question2").val().trim(),$("#question3").val().trim(),$("#question4").val().trim(),$("#question5").val().trim(),$("#question6").val().trim(),$("#question7").val().trim(),$("#question8").val().trim(),$("#question9").val().trim(),$("#question10").val().trim()]
-      };
+        var newFriend = {
+            name: $("#inputName").val().trim(),
+            photo: $("#inputPhoto").val().trim(),
+            scores: [$("#question1").val().trim(), 
+            $("#question2").val().trim(), 
+            $("#question3").val().trim(), 
+            $("#question4").val().trim(), 
+            $("#question5").val().trim(), 
+            $("#question6").val().trim(), 
+            $("#question7").val().trim(), 
+            $("#question8").val().trim(), 
+            $("#question9").val().trim(), 
+            $("#question10").val().trim()]
+        };
 
-      // post questionaire results to friends data array
-      $.post("/api/new", newFriend)
-      .done(function(data) {
-        console.log(data);
-        alert("Adding results...");
-      });
+        // post questionaire results to friends data array
+        $.post("/api/new", newFriend)
+            .done(function(data) {
+                $("#match-photo").attr("src", data.photo);
+        		$("#match-name").text(data.name);
+                $("#myModal").modal("toggle");
+            });
 
     });
-  </script>
+    </script>
 
 </body>
+
 </html>
